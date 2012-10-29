@@ -10,8 +10,10 @@ class window.Uploader extends Spine.Controller
 		'#global_progress': 'global_progress'
 		'#upload_list'		: 'upload_list'
 	
-	constructor		: ->
+	constructor		: (options = {})->
 		super
+		
+		@options = options
 		
 		@.bind('upload_error', @upload_error)
 		@.bind('complete_upload', @complete_upload)
@@ -30,9 +32,9 @@ class window.Uploader extends Spine.Controller
 			'post_headers'		: {}
 		
 		if typeof FileReader != 'undefined' && 'draggable' of document.createElement('span')
-			@use_filedrop(@defaults, @defaults)
+			@use_upchunk(@defaults, @options)
 		else if swfobject.hasFlashPlayerVersion('9.0.24')
-			@use_swfupload(@defaults, @defaults)
+			@use_swfupload(@defaults, @options)
 	
 	
 	
@@ -59,7 +61,7 @@ class window.Uploader extends Spine.Controller
 		switch event.error
 			when 'BrowserNotSupported'
 				console.log 'browser not supported'
-			when 'TooManyFiles' || 'QUEUE_LIMIT_EXCEEDED' || 'FILE_VALIDATION_FAILED'
+			when 'TooManyFiles' || 'QUEUE_LIMIT_EXCEEDED' || 'FILE_VALIDATION_FAILED' || 'UploadHalted'
 				console.log 'too many files'
 			when 'FileTooLarge' || 'FILE_EXCEEDS_SIZE_LIMIT'
 				console.log 'file too large'
@@ -73,16 +75,15 @@ class window.Uploader extends Spine.Controller
 	update_global_progress	: (progress) ->
 		@global_progress.width("#{progress}%")
 	
-	use_filedrop	: (defaults = {}, options = {}) ->
-		$(document).filedrop({
+	use_upchunk	: (defaults = {}, options = {}) ->
+		$(document).upchunk({
 			'fallback_id'			: options.fallback_id		|| defaults.fallback_id
 			'url'							: options.post_url			|| defaults.post_url
-			'paramname'				: options.post_param		|| defaults.post_param
-			'maxfilesize'			: options.max_file_size	|| defaults.max_file_size
+			'file_param'			: options.post_param		|| defaults.post_param
+			'max_file_size'		: options.max_file_size	|| defaults.max_file_size
 			'data'						: options.post_data			|| defaults.post_data				|| {}
 			'headers'					: options.post_headers	|| defaults.post_headers		|| {}
 			'queuefiles'			: 3
-			'withCredentials'	: true
 			
 			'docEnter'				: ->
 				# document has been entered
@@ -113,10 +114,10 @@ class window.Uploader extends Spine.Controller
 					'progress': progress
 				}
 			
-			'speedUpdated'		: (i, file, speed) ->
-				upload = File.findByAttribute('name', file.name)
-				upload.speed = speed
-				upload.save()
+			#'speedUpdated'		: (i, file, speed) ->
+			#	upload = File.findByAttribute('name', file.name)
+			#	upload.speed = speed
+			#	upload.save()
 			
 			'uploadFinished'	: (i, file, response, time) =>
 				upload = File.findByAttribute('name', file.name)
@@ -148,9 +149,9 @@ class window.Uploader extends Spine.Controller
 				}
 			
 			
-			'globalProgressUpdated'	: (progress) =>
-				@update_global_progress(progress)
-			
+			#'globalProgressUpdated'	: (progress) =>
+			#	@update_global_progress(progress)
+			#
 		})	
 		
 
