@@ -5,4 +5,4 @@ requires the following:
 * underscore.js
 * Spine
 * SWFUpload
-* FileDrop
+* UpChunk
