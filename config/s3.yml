@@ -1,0 +1,13 @@
+development:
+  access_key        : '123'
+  secret_access_key : 'abc'
+  server            : 'localhost'
+  port              : '10001'
+  asset_host        : 'http://localhost:10001/bucket_name/'
+
+test:
+  access_key        : '123'
+  secret_access_key : 'abc'
+  server            : 'localhost'
+  port              : '10001'
+  asset_host        : 'http://localhost:10001/bucket_name/'

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title><%= ENV['APP_NAME'] %></title>
+
+	</head>
+	<body>
+		<%= yield %>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/javascripts/vendor/underscore-1.4.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/javascripts/vendor/spine-1.0.8/spine.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/javascripts/vendor/spine-1.0.8/route.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/javascripts/vendor/spine-1.0.8/ajax.js"></script>
+		<script type="text/javascript" src="/javascripts/vendor/jquery.upchunk.js"></script>
+		<script	type="text/javascript" src="/javascripts/app/uploader.js"></script>
+		<script	type="text/javascript" src="/javascripts/app/assets.js"></script>
+
+		<script type="text/javascript">
+			$(function(){
+				<% if @assets %>
+					window.uploader = new window.Uploader({el: $(document)});
+					window.assets = new window.Assets({el: $(document)});
+					Asset.refresh(<%= @assets.to_json %>)
+				<% end %>
+			});
+
+		</script>
+	</body>
+</html>

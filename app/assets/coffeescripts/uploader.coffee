@@ -1,62 +1,62 @@
 #	@codekit-prepend('controllers/upload.coffee')
-
+#
 ###
 #	requires Spine, Filedrop, and SWFupload
 ###
 
 class window.Uploader extends Spine.Controller
-	
+
 	elements:
 		'#global_progress': 'global_progress'
 		'#upload_list'		: 'upload_list'
-	
+
 	constructor		: (options = {})->
 		super
-		
+
 		@options = options
-		
+
 		@.bind('upload_error', @upload_error)
 		@.bind('complete_upload', @complete_upload)
 		@.bind('update_upload', @update_upload)
-		
+
 		File.bind('create', @add_upload)
 		File.bind('destroy', @remove_upload)
-		
+
 		@defaults =
 			'fallback_id'			: 'file_select'
-			'post_url'				: '/'
+			'post_url'				: '/upload'
 			'post_param'			: 'file'
-			'max_files'				: 1
+			'max_files'				: 1000
 			'max_file_size'		: 3000
 			'post_data'				: {}
 			'post_headers'		: {}
-		
+
 		if typeof FileReader != 'undefined' && 'draggable' of document.createElement('span')
 			@use_upchunk(@defaults, @options)
 		else if swfobject.hasFlashPlayerVersion('9.0.24')
 			@use_swfupload(@defaults, @options)
-	
-	
-	
+
+
+
 	add_upload		: (file) =>
 		view = new Upload('item' : file)
 		@upload_list.append(view.render().el)
-	
+
 	remove_upload	: (file) =>
 		if file.swf_id && @swf_upload
 			unless file.complete
 				@swf_upload.cancelUpload(file.swf_id, false)
-	
+
 	update_upload	: (event)->
 		# upload has been updated
 		# event.file
 		# event.progress
-	
+
 	complete_upload	: (event) ->
 		# upload has completed
 		# event.file
-	
-	
+
+
 	upload_error	: (event) ->
 		switch event.error
 			when 'BrowserNotSupported'
@@ -71,10 +71,10 @@ class window.Uploader extends Spine.Controller
 				console.log 'empty files are not allowed'
 			else
 				console.log 'generic error'
-	
+
 	update_global_progress	: (progress) ->
 		@global_progress.width("#{progress}%")
-	
+
 	use_upchunk	: (defaults = {}, options = {}) ->
 		$(document).upchunk({
 			'fallback_id'			: options.fallback_id		|| defaults.fallback_id
@@ -84,13 +84,13 @@ class window.Uploader extends Spine.Controller
 			'data'						: options.post_data			|| defaults.post_data				|| {}
 			'headers'					: options.post_headers	|| defaults.post_headers		|| {}
 			'queuefiles'			: 3
-			
+
 			'docEnter'				: ->
 				# document has been entered
-			
+
 			'docLeave'				: ->
 				# document has been left
-			
+
 			'beforeEach'			: (file)  =>
 				if File.count() >= (options.max_files	 || defaults.max_files)
 					@trigger 'upload_error', {
@@ -98,14 +98,14 @@ class window.Uploader extends Spine.Controller
 						'file'	: file
 					}
 					return false
-			
+
 			'uploadStarted'		: (i, file, len) ->
 				File.create({
 					'name'		: file.name
 					'size'		: file.size
 				})
-			
-			'progressUpdated'	: (i, file, progress) ->
+
+			'progressUpdated'	: (i, file, progress) =>
 				upload = File.findByAttribute('name', file.name)
 				upload.progress = progress
 				upload.save()
@@ -113,12 +113,12 @@ class window.Uploader extends Spine.Controller
 					'file'		: file
 					'progress': progress
 				}
-			
+
 			#'speedUpdated'		: (i, file, speed) ->
 			#	upload = File.findByAttribute('name', file.name)
 			#	upload.speed = speed
 			#	upload.save()
-			
+
 			'uploadFinished'	: (i, file, response, time) =>
 				upload = File.findByAttribute('name', file.name)
 				if response
@@ -141,21 +141,21 @@ class window.Uploader extends Spine.Controller
 						'error'	: 'unknown'
 						'file'	: file
 					}
-			
+
 			'error'						: (error, file) =>
 				@trigger 'upload_error', {
 					'error'	: error
 					'file'	: file
 				}
-			
-			
+
+
 			#'globalProgressUpdated'	: (progress) =>
 			#	@update_global_progress(progress)
 			#
-		})	
-		
+		})
 
-		
+
+
 	use_swfupload	: (defaults = {}, options = {}) ->
 		@swf_upload = new SWFUpload
 			#'button_action'					: SWFUpload.BUTTON_ACTION.SELECT_FILES
@@ -169,14 +169,14 @@ class window.Uploader extends Spine.Controller
 			'file_size_limit'				: options.max_file_size	|| defaults.max_file_size
 			'post_params'						: options.post_data			|| defaults.post_data
 			'debug'									: true
-			
+
 			'file_queue_error_handler'	: (file, code, error) =>
 				error = _.invert(SWFUpload.QUEUE_ERROR)[code]
 				@trigger 'upload_error', {
 					'error'	: error
 					'file'	: file
 				}
-			
+
 			'upload_start_handler'	: (file) =>
 				if File.count() >= (options.max_files	 || defaults.max_files)
 					@trigger 'upload_error', {
@@ -184,14 +184,14 @@ class window.Uploader extends Spine.Controller
 						'file'	: file
 					}
 					return false
-					
-				if file 
+
+				if file
 					File.create({
 						'name'		: file.name
 						'size'		: file.size
 						'swf_id'	: file.id
 					})
-			
+
 			'upload_progress_handler'	: (file, uploaded, total) =>
 				upload = File.findByAttribute('name', file.name)
 				upload.progress = (uploaded/total) * 100
@@ -200,7 +200,7 @@ class window.Uploader extends Spine.Controller
 					'file'		: file
 					'progress': (uploaded/total) * 100
 				}
-			
+
 			'upload_success_handler'	: (file) =>
 				upload = File.findByAttribute('name', file.name)
 				upload.progress	= 100
@@ -209,7 +209,7 @@ class window.Uploader extends Spine.Controller
 				@trigger 'update_complete', {
 					'file'		: file
 				}
-			
+
 			'upload_error_handler'		: (file, code, error) =>
 				if file
 					upload = File.findByAttribute('name', file.name)
@@ -219,12 +219,10 @@ class window.Uploader extends Spine.Controller
 						'error'	: error
 						'file'	: file
 					}
-				
-			
+
+
 			'file_dialog_complete_handler'	: (args...) =>
 				@swf_upload.startUpload()
-			
 
 
-$ ->
-	uploader = new Uploader({el: $(document)})
+

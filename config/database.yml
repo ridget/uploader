@@ -1,0 +1,29 @@
+production:
+  adapter       : 'sqlite'
+  location      : 'db/production.db'
+  auto_upgrade  : 'true'
+
+development:
+  adapter       : 'sqlite'
+  location      : 'db/development.db'
+  auto_upgrade  : 'true'  
+
+test:
+  adapter       : 'sqlite'
+  location      : 'db/test.db'
+  auto_migrate  : 'true'
+
+
+# PostgreSQL
+# adapter       : 'postgres'
+# location      : 'localhost/dbname'
+# auto_migrate  : 'true'
+# auto_upgrade  : 'true'
+
+# MongoDB
+# adapter       : 'mongo'
+# location      : 'localhost/dbname'
+
+# MySQL
+# adapter       : 'mysql'
+# location      : 'localhost/dbname'

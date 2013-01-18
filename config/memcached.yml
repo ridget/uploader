@@ -1,0 +1,8 @@
+production:
+  location      : 'localhost:11211'
+
+development:
+  location      : 'localhost:11211'
+
+test:
+  location      : 'localhost:11211'
