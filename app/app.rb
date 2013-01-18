@@ -13,10 +13,10 @@ module Application
 		end
 
 		post '/upload/?' do
-			upload(params[:file][:filename], params[:file][:tempfile])
+			upload(params[:file][:filename], params[:file][:tempfile]) if params[:file] && params[:file][:filename]
 			asset = Asset.new()
-			asset.path = params[:file][:filename]
-			asset.save
+			asset.path = params[:file][:filename] if params[:file] && params[:file][:filename]
+			halt 400, unless asset.valid? and asset.save
 		end
 
 		delete '/assets/:asset_id/?' do

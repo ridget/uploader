@@ -2,37 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8248",
   "files" : {
-    "\/uploads\/3ebdace49fd5ccbe8ddf5120df.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/3ebdace49fd5ccbe8ddf5120df.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/3ebdace49fd5ccbe8ddf5120df.jpg",
-      "initialSize" : 506378,
-      "fileType" : 4096
-    },
-    "\/uploads\/0cf4a4374f891b3e71280cede7.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/0cf4a4374f891b3e71280cede7.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/0cf4a4374f891b3e71280cede7.png",
-      "initialSize" : 124305,
-      "fileType" : 8192
-    },
-    "\/app\/views\/index.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/index.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/assets\/coffeescripts\/models\/asset.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -44,68 +13,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/models\/asset.js",
       "outputStyle" : 0,
       "fileType" : 32
-    },
-    "\/uploads\/3c54a3a4a0284aae28f8419053.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/3c54a3a4a0284aae28f8419053.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/3c54a3a4a0284aae28f8419053.jpg",
-      "initialSize" : 3452837,
-      "fileType" : 4096
-    },
-    "\/uploads\/2d2c9bae643c2ffbe2dd0aa1ae.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/2d2c9bae643c2ffbe2dd0aa1ae.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/2d2c9bae643c2ffbe2dd0aa1ae.jpg",
-      "initialSize" : 1327672,
-      "fileType" : 4096
-    },
-    "\/app\/views\/test.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/test.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/uploads\/0da6a0c8b272028e6be1ff28f4.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/0da6a0c8b272028e6be1ff28f4.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/0da6a0c8b272028e6be1ff28f4.jpg",
-      "initialSize" : 37505,
-      "fileType" : 4096
-    },
-    "\/uploads\/6dacaf17caa8288b93e77b0f08.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/6dacaf17caa8288b93e77b0f08.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/6dacaf17caa8288b93e77b0f08.jpg",
-      "initialSize" : 1182710,
-      "fileType" : 4096
-    },
-    "\/app\/views\/layout.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/layout.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee" : {
       "ignoreWasSetByUser" : 0,
@@ -119,37 +26,48 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/uploads\/0ec38525696087024eb59e15e9.jpg" : {
+    "\/app\/views\/index.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/0ec38525696087024eb59e15e9.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/0ec38525696087024eb59e15e9.jpg",
-      "initialSize" : 221484,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/app\/views\/index.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
-    "\/uploads\/3ebfbe9fed637fdf73c1156d1c.jpg" : {
+    "\/app\/assets\/coffeescripts\/assets.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/3ebfbe9fed637fdf73c1156d1c.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/3ebfbe9fed637fdf73c1156d1c.jpg",
-      "initialSize" : 2061806,
-      "fileType" : 4096
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/assets.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/public\/javascripts\/app\/assets.js",
+      "outputStyle" : 0,
+      "fileType" : 32
     },
-    "\/app\/assets\/coffeescripts\/views\/file.coffee" : {
+    "\/app\/assets\/coffeescripts\/controllers\/upload.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.coffee",
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/upload.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.js",
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/upload.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.js",
       "outputStyle" : 0,
       "fileType" : 32
     },
@@ -165,39 +83,14 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg" : {
+    "\/app\/views\/test.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg",
-      "initialSize" : 1427737,
-      "fileType" : 4096
-    },
-    "\/app\/assets\/coffeescripts\/controllers\/upload.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/upload.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/upload.js",
-      "outputStyle" : 0,
-      "fileType" : 32
-    },
-    "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg",
-      "initialSize" : 1053502,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/app\/views\/test.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/assets\/coffeescripts\/models\/file.coffee" : {
       "ignoreWasSetByUser" : 0,
@@ -211,62 +104,26 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/coffeescripts\/assets.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/assets.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/public\/javascripts\/app\/assets.js",
-      "outputStyle" : 0,
-      "fileType" : 32
-    },
-    "\/uploads\/3d71589ab1af5ac495010d7f28.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/3d71589ab1af5ac495010d7f28.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/3d71589ab1af5ac495010d7f28.jpg",
-      "initialSize" : 125719,
-      "fileType" : 4096
-    },
-    "\/uploads\/2a9eb18ce145083d8aa7834e24.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/2a9eb18ce145083d8aa7834e24.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/2a9eb18ce145083d8aa7834e24.jpg",
-      "initialSize" : 150517,
-      "fileType" : 4096
-    },
-    "\/uploads\/2d1c1e4e2e8a4df8748ffa6afb.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/2d1c1e4e2e8a4df8748ffa6afb.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/2d1c1e4e2e8a4df8748ffa6afb.png",
-      "initialSize" : 1998929,
-      "fileType" : 8192
-    },
-    "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee" : {
+    "\/app\/assets\/coffeescripts\/views\/file.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee",
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.js",
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.js",
       "outputStyle" : 0,
       "fileType" : 32
+    },
+    "\/app\/views\/layout.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/layout.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
