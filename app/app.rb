@@ -13,10 +13,9 @@ module Application
 		end
 
 		post '/upload/?' do
-			File.open('uploads/' + params[:file][:filename], "w") do |f|
-  			f.write(params[:file][:tempfile].read)
-			end
-			asset = Asset.new(:path => params[:file][:filename])
+			upload(params[:file][:filename], params[:file][:tempfile])
+			asset = Asset.new()
+			asset.path = params[:file][:filename]
 			asset.save
 		end
 

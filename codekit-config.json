@@ -2,6 +2,17 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8248",
   "files" : {
+    "\/uploads\/3ebdace49fd5ccbe8ddf5120df.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/uploads\/3ebdace49fd5ccbe8ddf5120df.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/uploads\/3ebdace49fd5ccbe8ddf5120df.jpg",
+      "initialSize" : 506378,
+      "fileType" : 4096
+    },
     "\/uploads\/0cf4a4374f891b3e71280cede7.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -34,6 +45,17 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
+    "\/uploads\/3c54a3a4a0284aae28f8419053.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/uploads\/3c54a3a4a0284aae28f8419053.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/uploads\/3c54a3a4a0284aae28f8419053.jpg",
+      "initialSize" : 3452837,
+      "fileType" : 4096
+    },
     "\/uploads\/2d2c9bae643c2ffbe2dd0aa1ae.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -65,17 +87,16 @@
       "initialSize" : 37505,
       "fileType" : 4096
     },
-    "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee" : {
+    "\/uploads\/6dacaf17caa8288b93e77b0f08.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.js",
-      "outputStyle" : 0,
-      "fileType" : 32
+      "inputAbbreviatedPath" : "\/uploads\/6dacaf17caa8288b93e77b0f08.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/uploads\/6dacaf17caa8288b93e77b0f08.jpg",
+      "initialSize" : 1182710,
+      "fileType" : 4096
     },
     "\/app\/views\/layout.erb" : {
       "ignoreWasSetByUser" : 0,
@@ -86,15 +107,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/app\/assets\/coffeescripts\/views\/file.coffee" : {
+    "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.coffee",
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.js",
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.js",
       "outputStyle" : 0,
       "fileType" : 32
     },
@@ -109,6 +130,29 @@
       "initialSize" : 221484,
       "fileType" : 4096
     },
+    "\/uploads\/3ebfbe9fed637fdf73c1156d1c.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/uploads\/3ebfbe9fed637fdf73c1156d1c.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/uploads\/3ebfbe9fed637fdf73c1156d1c.jpg",
+      "initialSize" : 2061806,
+      "fileType" : 4096
+    },
+    "\/app\/assets\/coffeescripts\/views\/file.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
     "\/app\/assets\/coffeescripts\/uploader.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -121,15 +165,15 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg" : {
+    "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg",
+      "inputAbbreviatedPath" : "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg",
-      "initialSize" : 1053502,
+      "outputAbbreviatedPath" : "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg",
+      "initialSize" : 1427737,
       "fileType" : 4096
     },
     "\/app\/assets\/coffeescripts\/controllers\/upload.coffee" : {
@@ -144,15 +188,15 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg" : {
+    "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg",
+      "inputAbbreviatedPath" : "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/uploads\/538bacdd0b7fc80e96b3617a4b.jpg",
-      "initialSize" : 1427737,
+      "outputAbbreviatedPath" : "\/uploads\/1b1f5b7ee8360230e30be1b366.jpg",
+      "initialSize" : 1053502,
       "fileType" : 4096
     },
     "\/app\/assets\/coffeescripts\/models\/file.coffee" : {
