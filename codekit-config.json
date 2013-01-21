@@ -14,15 +14,15 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee" : {
+    "\/app\/assets\/coffeescripts\/views\/file.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee",
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.js",
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.js",
       "outputStyle" : 0,
       "fileType" : 32
     },
@@ -42,7 +42,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/assets.coffee",
       "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
+      "minifyOutput" : 0,
       "outputAbbreviatedPath" : "\/public\/javascripts\/app\/assets.js",
       "outputStyle" : 0,
       "fileType" : 32
@@ -59,39 +59,6 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.js",
-      "outputStyle" : 0,
-      "fileType" : 32
-    },
-    "\/app\/assets\/coffeescripts\/uploader.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/uploader.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/public\/javascripts\/app\/uploader.js",
-      "outputStyle" : 0,
-      "fileType" : 32
-    },
-    "\/app\/views\/test.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/test.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/assets\/coffeescripts\/models\/file.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -104,15 +71,48 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/coffeescripts\/views\/file.coffee" : {
+    "\/app\/assets\/coffeescripts\/uploader.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/uploader.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/public\/javascripts\/app\/uploader.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.coffee",
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/file.js",
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/controllers\/asset_item.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/app\/views\/test.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/test.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/coffeescripts\/views\/asset_item_view.js",
       "outputStyle" : 0,
       "fileType" : 32
     },

@@ -1,5 +1,5 @@
-#	@codekit-prepend('controllers/upload.coffee')
-#
+#@codekit-prepend('controllers/upload.coffee')
+#@codekit-prepend('models/asset.coffee')
 ###
 #	requires Spine, Filedrop, and SWFupload
 ###
@@ -24,7 +24,7 @@ class window.Uploader extends Spine.Controller
 
 		@defaults =
 			'fallback_id'			: 'file_select'
-			'post_url'				: '/upload'
+			'post_url'				: '/assets'
 			'post_param'			: 'file'
 			'max_files'				: 1000
 			'max_file_size'		: 3000
@@ -47,18 +47,22 @@ class window.Uploader extends Spine.Controller
 			unless file.complete
 				@swf_upload.cancelUpload(file.swf_id, false)
 
-	update_upload	: (event)->
+	update_upload	: (event) ->
 		# upload has been updated
 		# event.file
 		# event.progress
 
-	complete_upload	: (event) ->
+	complete_upload	: (event) =>
+		asset = Asset.refresh(event.asset)
+		File.destroy(event.file.id)
+
 		# upload has completed
 		# event.file
 
 
-	upload_error	: (event) ->
-		switch event.error
+
+	upload_error	: (error) ->
+		switch error
 			when 'BrowserNotSupported'
 				console.log 'browser not supported'
 			when 'TooManyFiles' || 'QUEUE_LIMIT_EXCEEDED' || 'FILE_VALIDATION_FAILED' || 'UploadHalted'
@@ -83,7 +87,7 @@ class window.Uploader extends Spine.Controller
 			'max_file_size'		: options.max_file_size	|| defaults.max_file_size
 			'data'						: options.post_data			|| defaults.post_data				|| {}
 			'headers'					: options.post_headers	|| defaults.post_headers		|| {}
-			'queuefiles'			: 3
+			'queue_size'			: 3
 
 			'docEnter'				: ->
 				# document has been entered
@@ -99,13 +103,13 @@ class window.Uploader extends Spine.Controller
 					}
 					return false
 
-			'uploadStarted'		: (i, file, len) ->
+			'uploadStarted'		: (file,hash) ->
 				File.create({
 					'name'		: file.name
 					'size'		: file.size
 				})
 
-			'progressUpdated'	: (i, file, progress) =>
+			'progressUpdated'	: (file,hash, progress) =>
 				upload = File.findByAttribute('name', file.name)
 				upload.progress = progress
 				upload.save()
@@ -119,33 +123,26 @@ class window.Uploader extends Spine.Controller
 			#	upload.speed = speed
 			#	upload.save()
 
-			'uploadFinished'	: (i, file, response, time) =>
+			'uploadFinished'	: (file,hash,response) =>
 				upload = File.findByAttribute('name', file.name)
 				if response
-					if response.status is 200
-						upload.progress	= 100
-						upload.complete	= true
-						upload.save()
-						@trigger 'complete_upload', {
-							'file'	: file
-						}
-					else
-						upload.destroy()
-						@trigger 'upload_error', {
-							'error'	: response.content
-							'file'	: file
-						}
+					upload.progress	= 100
+					upload.complete	= true
+					upload.save()
+					@trigger 'complete_upload', {
+						'file'	: upload
+						'asset' : response
+
+					}
 				else
 					upload.destroy()
 					@trigger 'upload_error', {
 						'error'	: 'unknown'
-						'file'	: file
 					}
 
-			'error'						: (error, file) =>
+			'error'						: (error) =>
 				@trigger 'upload_error', {
 					'error'	: error
-					'file'	: file
 				}
 
 

@@ -3,7 +3,7 @@ class window.Asset extends Spine.Model
 
 	@extend Spine.Model.Ajax
 
-	@url = "http://uploader.dev/assets"
+	@url: "http://uploader.dev/assets"
 
 	constructor	: ->
 		super

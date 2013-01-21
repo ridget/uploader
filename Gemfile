@@ -2,7 +2,7 @@ source	:rubygems
 
 # Framework
 gem			'sinatra',					:require => 'sinatra/base'
-#gem			'rack-flash3',			:require => 'rack-flash'
+gem			'rack-flash3',			:require => 'rack-flash'
 
 # Logging
 gem			'log4r'

@@ -48,6 +48,9 @@ GEM
     multi_json (1.5.0)
     nyan-cat-formatter (0.2.0)
     rack (1.4.4)
+    rack-flash3 (1.0.1)
+      rack
+      rack
     rack-protection (1.3.2)
       rack
     rack-test (0.6.2)
@@ -91,6 +94,7 @@ DEPENDENCIES
   fakes3
   log4r
   nyan-cat-formatter
+  rack-flash3
   rack-test
   rake
   rspec
